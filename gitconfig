@@ -1,0 +1,14 @@
+[user]
+	name = Testie Test
+	email = gregory_arndt@optum.com
+[core]
+	editor = /usr/bin/vim
+	autocrlf = input
+    excludesfile = ~/.gitignore
+[apply]
+whitespace = nowarn
+
+[alias]
+      lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+[help]
+autocorrect = 1safecrlf = true

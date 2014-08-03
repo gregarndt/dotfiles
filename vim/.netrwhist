@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/Users/garndt'
+let g:netrw_dirhist_2='/Users/garndt/projects'
+let g:netrw_dirhist_3='/Users/garndt/projects/work'
+let g:netrw_dirhist_4='/Users/garndt/projects/work/experior'
+let g:netrw_dirhist_5='/Users/garndt/projects/work/experior/docs'
+let g:netrw_dirhist_6='/Users/garndt'
