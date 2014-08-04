@@ -1,13 +1,16 @@
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
-export PS1='\[\e]0;\w\a\]\n\[\e[32m\]\u@\h: \[\e[33m\]\w\[\e[0m\]\n\$ '
-
-PATH=/usr/local/bin:$PATH
 stty -ixon -ixoff
+PATH=/usr/local/bin:$PATH
+
+export PS1='\[\e]0;\w\a\]\n\[\e[32m\]\u@\h: \[\e[33m\]\w\[\e[0m\]\n\$ '
+export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacad
+
 alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
 alias d='cd ~/Dropbox'
 alias home='cd ~'
-alias ls='ls -all'
+alias ls='ls -a'
 alias v='vim'
 alias profile='vim ~/.bash_profile'
 
@@ -15,9 +18,3 @@ alias profile='vim ~/.bash_profile'
 # The orginal version is saved in .bash_profile.pysave
 PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
 export PATH
-
-source /Library/Frameworks/Python.framework/Versions/2.7/bin/virtualenvwrapper.sh
-
-if [ -f ~/.config/exercism/exercism_completion.bash ]; then
-        . ~/.config/exercism/exercism_completion.bash
-fi
