@@ -1,6 +1,6 @@
 [user]
-	name = Testie Test
-	email = gregory_arndt@optum.com
+	name = Greg Arndt
+	email = garndt@mozilla.com
 [core]
 	editor = /usr/bin/vim
 	autocrlf = input
@@ -12,3 +12,5 @@ whitespace = nowarn
       lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
 [help]
 autocorrect = 1safecrlf = true
+[credential]
+	helper = osxkeychain
