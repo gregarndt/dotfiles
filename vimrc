@@ -115,7 +115,7 @@ set backspace=2 " make backspace work normal (non-vi style)
 set whichwrap+=<,>,h,l  " backspace and cursor keys wrap to next/prev lines
 set wildignore=*.swp,*.bak,*.pyc,*.class
 set ruler
-set colorcolumn=100
+set colorcolumn=80
 set laststatus=2
 set statusline=%<%f%=\ [%1*%M%*%n%R]\ y\ %-19(%3l,%02c%03V%)
 highlight ColorColumn ctermbg=233

@@ -1,19 +1,25 @@
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 stty -ixon -ixoff
-PATH=/usr/local/bin:$PATH
-export WORKON_HOME=~/.envs
-export B2G_bin=/Applications/B2G.app/Contents/MacOS/b2g-bin 
-export B2G_profile=/Applications/B2G.app/Contents/MacOS/gaia/profile/
-source /usr/local/bin/virtualenvwrapper.sh
 
-export PS1='\[\e]0;\w\a\]\n\[\e[32m\]\u@\h: \[\e[33m\]\w\[\e[0m\]\n\$ '
+PATH=$HOME/.apps/bin:$HOME/work/packer:/usr/local/bin:$PATH
+
+source /usr/local/bin/virtualenvwrapper.sh
+source ~/.git-completion.bash
+source ~/.git-prompt.sh
+
+if [ -f ~/.credentials/aws_credentials.sh ]; then
+    source ~/credentials/aws_credentials.sh
+fi
+if [ -f ~/.credentials/taskcluster.sh ]; then
+    source ~/credentials/taskcluster.sh
+fi
+
+export WORKON_HOME=~/.envs
+
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
+export PS1='\[\e]0;\w\a\]\n\[\e[32m\]\u@\h: $(__git_ps1) \[\e[33m\]\w\[\e[0m\]\n\$ '
 
-alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
-alias d='cd ~/Dropbox'
-alias home='cd ~'
-alias ls='ls -a'
+alias ls='ls -al'
 alias v='vim'
-alias profile='vim ~/.bash_profile'
