@@ -22,6 +22,7 @@ map <Leader>rc :e $MYVIMRC<CR>
 nmap <Leader>nt :NERDTreeToggle<CR>
 map <Leader>ls :ls<CR>
 map <Leader>ts :e ~/Dropbox/notes/tool_sharpening.txt<CR>
+map <Leader>jsh :JSHint -W104 -W119<CR>
 
 nnoremap <CR> :noh<CR><CR>
 

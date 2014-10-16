@@ -16,6 +16,7 @@ if [ -f ~/.credentials/taskcluster.sh ]; then
 fi
 
 export WORKON_HOME=~/.envs
+export DOCKER_HOST=tcp://192.168.50.10:4243
 
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
