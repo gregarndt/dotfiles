@@ -2,7 +2,7 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 stty -ixon -ixoff
 
-PATH=$HOME/.apps/bin:$HOME/work/packer:/usr/local/bin:$PATH
+PATH=/Users/mozilla/work/moz-git-tools:$HOME/.apps/bin:$HOME/work/packer:/usr/local/bin:$PATH
 
 source /usr/local/bin/virtualenvwrapper.sh
 source ~/.git-completion.bash

@@ -1,2 +1,4 @@
 [ui]
-username = Greg Arndt <arndt.greg@gmail.com>
+username = Greg Arndt <garndt@mozilla.com>
+ssh = ssh -C
+
